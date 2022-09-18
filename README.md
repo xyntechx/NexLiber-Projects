@@ -1,7 +1,7 @@
 # Guide for Creators
 Thank you for your interest in becoming a Creator! Follow the steps below to start your journey with [NexLiber](https://nexliber.com)!
 
-## Fork This repository
+## Fork This Repository
 Since you do not have write access to `xyntechx/NexLiber-Projects`, you have to fork this repository before creating a pull request with the project you have in mind. Follow GitHub's official guide [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) to learn how you can fork a repository.
 
 ## Add Your Project
