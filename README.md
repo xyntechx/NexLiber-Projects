@@ -24,7 +24,7 @@ Things to note:
 Your project must be reviewed and approved by an admin before it is merged into the main branch.
 
 ## Next Steps
-Upon merging, you will be assigned an Editor to monitor your progress in drafting the Workbook of your project. Please read the [Workbook Dev Guide](https://github.com/xyntechx/NexLiber/blob/main/creator/GUIDE.md) before writing and pushing your Workbook to `xyntechx/NexLiber`. Once you have completed your Workbook, it will be put up on NexLiber, and you will be a published NexLiber Creator!
+Upon merging, you will be assigned an Editor to monitor your progress in drafting the Workbook of your project. Please read the [Workbook Dev Guide](https://github.com/xyntechx/NexLiber/blob/main/WBDEV.md) before writing and pushing your Workbook to `xyntechx/NexLiber`. Once you have completed your Workbook, it will be put up on NexLiber, and you will be a published NexLiber Creator!
 
 ## Discord Community
 If you have any questions regarding this process or NexLiber in general, raise it up on our [Discord](https://discord.gg/CvZGEjyzbR)!
