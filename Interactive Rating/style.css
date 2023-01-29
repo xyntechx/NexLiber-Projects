@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ :root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --medium-blue: hsl(213, 19%, 25%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    max-width: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    background-color: var(--dark-blue);
+    opacity: 80%;
+    width: 30%;
+    border-radius: 1.5rem;
+    color: var(--white);
+    padding: 1rem;
+}
+
+.container * {
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+.star {
+    background-color: var(--medium-blue);
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--light-grey);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flexbox>button {
+    background-color: var(--medium-blue);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    color: var(--light-grey);
+    border: 0;
+    margin: 1rem 0;
+}
+
+.flexbox>button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.active {
+    background-color: var(--medium-grey) !important;
+    color: var(--white);
+    cursor: pointer;
+    transition: ease-in 0.8s;
+}
+
+.submit {
+    width: 100%;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.8rem;
+    background-color: var(--orange);
+    color: var(--white);
+    margin: auto;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    border: 0;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.thank-description {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--light-grey);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.selected {
+    color: var(--orange);
+    background-color: var(--medium-blue);
+    border-radius: 3rem;
+    opacity: 80%;
+    margin: 0;
+}
+
+.selected>p {
+    margin: 0.5rem;
+}
+
+.rating {
+    display: block;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin: 0;
+}
+
+#value {
+    margin: 0;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .flexbox {
+        gap: 1rem;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 50%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 30%;
+    }
+}
