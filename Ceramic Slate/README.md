@@ -1,5 +1,5 @@
 # Ceramic Slate
-A Next.js journal app.
+A journal powered by ceramic.
 
 ## Field
 Web Development
