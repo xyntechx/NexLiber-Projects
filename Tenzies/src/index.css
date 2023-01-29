@@ -1,0 +1,130 @@
+:root {
+  --dark: #0b2434;
+  --light: #f5f5f5;
+  --green: #59e391;
+  --white: #ffffff;
+  --text-main: #2b283a;
+  --text-sub: #4a4e74;
+  --blue: #5035ff;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--dark);
+  height: 100vh;
+  padding: 3rem 2rem;
+}
+
+main {
+  background-color: var(--light);
+  border-radius: 10px;
+  height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.2rem;
+  color: var(--text-main);
+}
+
+.instruction {
+  font-family: "Inter", sans-serif;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: -0.03em;
+  font-size: 2.3rem;
+  max-width: 500px;
+  color: var(--text-sub);
+}
+
+.die-container {
+  max-width: 400px;
+  width: 90%;
+  display: grid;
+  margin-top: 2.5rem;
+  grid-template: auto auto / repeat(5, 4rem);
+  justify-content: space-between;
+  row-gap: 4rem;
+}
+
+.white {
+  background: var(--white);
+}
+
+.green {
+  background: var(--green);
+}
+
+.die-face {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.die-value {
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.roll-btn {
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
+  padding: 1.3rem 4rem;
+  border: none;
+  margin-top: 4rem;
+  font-size: 2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+@media all and (max-width: 460px) {
+  .title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  .instruction {
+    line-height: 2.2rem;
+    font-size: 1.8rem;
+  }
+
+  .die-face {
+    padding: 1rem 1.5rem;
+  }
+
+  .die-value {
+    font-size: 2.2rem;
+  }
+
+  .roll-btn {
+    padding: 1.3rem 3rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+}
