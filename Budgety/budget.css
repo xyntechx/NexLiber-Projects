@@ -1,0 +1,459 @@
+/** @format */
+
+.budget__title {
+  font-weight: 600;
+  font-size: 1.125em;
+  padding-top: 1.6em;
+  color: #011425;
+}
+
+.budget__value {
+  font-size: 2.5em;
+  padding-bottom: 0.4em;
+  padding-right: 2rem;
+}
+.income__title {
+  color: rgb(5, 85, 5);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.3125rem;
+}
+.expenses__title {
+  color: rgb(124, 32, 32);
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
+}
+
+.budget__income {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: rgba(21, 53, 21, 0.94);
+  width: 30vw;
+  margin: auto;
+  margin-bottom: 0.6%;
+  padding-top: 1%;
+  padding-left: 1em;
+  height: 2.8em;
+  font-size: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-between;
+  gap: 20%;
+}
+
+.budget__income---value {
+  padding-right: 0.5em;
+}
+
+.budget__expenses {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-size: 1rem;
+  width: 30vw;
+  margin: auto;
+  padding-top: 1%;
+  padding-left: 1em;
+  height: 2.8em;
+  background-color: rgb(180, 51, 28);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 20%;
+}
+
+.right {
+  padding-right: 1.5em;
+  display: flex;
+  gap: 0.4em;
+  color: rgb(180, 51, 28);
+}
+
+.budget__expenses--percentage {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7em;
+  height: 2.5em;
+  padding: 0.125em 0.375em;
+  background-color: rgba(232, 235, 225, 0.15);
+  border-radius: 0.1875em;
+  text-align: center;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  outline-color: rgba(1, 43, 2, 0.6);
+}
+
+.add_btn {
+  color: rgb(5, 109, 5);
+  border: none;
+  transition: 50ms ease-in;
+  background: transparent;
+  transition: 5ms ease-in-out;
+}
+.add_btn:focus {
+  padding-bottom: 2px;
+}
+.add__type {
+  margin: 0.6875rem 0;
+  width: 4%;
+  padding-left: 0.3125rem;
+  border: 0.125rem solid #ccc;
+  font-weight: 600;
+  border-radius: 0.3125rem;
+}
+.add__description {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  margin: 0.6875rem 0;
+  width: 25%;
+  border: 0.125rem solid #ccc;
+  border-radius: 0.3125rem;
+}
+.add__value {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  margin: 0.6875rem 0;
+  width: 7%;
+  border: 0.1225rem solid #ccc;
+  border-radius: 0.3125rem;
+}
+
+#income-0 {
+  color: #3d3838;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-between;
+  gap: 11.875rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 0.3125rem 0;
+}
+
+.item__value:hover {
+  transform: scaleX(1.2);
+}
+.item__description {
+  padding-left: 0.525rem;
+}
+
+#income-1 {
+  color: #3d3838;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-between;
+  gap: 11.875rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3125rem 0;
+}
+
+#expenses-0 {
+  color: #3d3838;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-between;
+  gap: 3.125rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 0.3125rem 0;
+}
+
+#expenses-1 {
+  color: #3d3838;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-between;
+  gap: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  box-sizing: border-box;
+  padding: 0.3125rem 0;
+}
+
+.income .item__value {
+  color: rgb(16, 90, 18);
+}
+
+.expenses__list .item__value {
+  color: rgb(145, 7, 7);
+}
+
+.expenses__list .item__percentage {
+  color: rgb(136, 6, 23);
+  display: flex;
+  flex-direction: row;
+  font-size: 0.6875rem;
+  height: 1.5625rem;
+  padding: 0.125rem 0.375rem;
+  background-color: rgba(197, 45, 45, 0.1);
+}
+.item__percentage:hover {
+  transform: scale(1.08);
+}
+.item__delete--btn {
+  visibility: hidden;
+  border: none;
+  background: transparent;
+  transition: 20ms ease-in;
+}
+#income-0:hover .item__delete--btn {
+  visibility: visible;
+}
+#income-1:hover .item__delete--btn {
+  visibility: visible;
+}
+#expenses-0:hover .item__delete--btn {
+  visibility: visible;
+}
+#expenses-1:hover .item__delete--btn {
+  visibility: visible;
+}
+.item__delete--btn:focus {
+  transform: scale(1.06);
+}
+
+@media screen and (max-width: 550px) {
+  .budget__income {
+    width: 50vw;
+    margin-bottom: 0.6%;
+    padding-top: 1.5%;
+    padding-left: 1em;
+    height: 2.6em;
+    font-size: 0.8em;
+    gap: 27%;
+  }
+  .budget__expenses {
+    width: 50vw;
+
+    margin-bottom: 0.6%;
+    padding-top: 1.5%;
+    padding-left: 1em;
+    height: 2.6em;
+    font-size: 0.8em;
+
+    gap: 14%;
+  }
+  .budget {
+    height: 40vh;
+    background-position: center;
+    background-position-y: top;
+  }
+
+  .budget__title {
+    font-size: 1.125em;
+    padding-top: 1em;
+  }
+  .budget__value {
+    padding-right: 2rem;
+    font-size: 2.5em;
+    padding-bottom: 0.1em;
+  }
+  .add_container {
+    height: 3.4rem;
+    background-color: whitesmoke;
+    gap: 0.5rem;
+  }
+  .add__description {
+    width: 35%;
+  }
+  .add__value {
+    width: 17%;
+  }
+  .add__type {
+    width: 9%;
+  }
+  .add_btn {
+    width: 7%;
+  }
+  .income__title {
+    font-size: 1rem;
+    padding-left: 12rem;
+  }
+  .expenses__title {
+    font-size: 1rem;
+    padding-left: 12rem;
+    padding-top: 0.5rem;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.1rem;
+    margin: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+  .income {
+    width: 90%;
+  }
+
+  #income-0 {
+    margin-left: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 75%;
+  }
+  .income__list .item {
+    margin-left: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 75%;
+  }
+
+  #income-1 {
+    margin-left: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 75%;
+  }
+
+  .expenses {
+    width: 90%;
+  }
+
+  #expenses-0 {
+    margin-left: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 75%;
+  }
+
+  .expenses__list .item {
+    margin-left: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 75%;
+  }
+
+  #expenses-1 {
+    margin-left: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .budget__income {
+    width: 60vw;
+    margin-bottom: 0.6%;
+    padding-top: 1.5%;
+    padding-left: 1em;
+    height: 2.6em;
+    font-size: 0.8em;
+    gap: 8%;
+  }
+  .budget__expenses {
+    width: 60vw;
+
+    margin-bottom: 0.6%;
+    padding-top: 1.5%;
+    padding-left: 1em;
+    height: 2.6em;
+    font-size: 0.8em;
+
+    gap: 5%;
+  }
+  .budget {
+    height: 30vh;
+    background-position: center;
+    background-position-y: top;
+  }
+
+  .budget__title {
+    font-size: 1.12em;
+    padding-top: 1em;
+  }
+  .budget__value {
+    padding-right: 2rem;
+    font-size: 2em;
+    padding-bottom: 0.1em;
+  }
+  .add_container {
+    height: 3.4rem;
+    background-color: whitesmoke;
+    gap: 0.5rem;
+  }
+  .add__description {
+    width: 35%;
+  }
+  .add__value {
+    width: 17%;
+  }
+  .add__type {
+    width: 9%;
+  }
+  .add_btn {
+    width: 7%;
+  }
+  .income__title {
+    font-size: 1rem;
+    padding-left: 8rem;
+  }
+  .expenses__title {
+    font-size: 1rem;
+    padding-left: 7.5rem;
+    padding-top: 0.5rem;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.1rem;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 0;
+  }
+
+  #income-0 {
+    margin-left: 1.4rem;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 88%;
+  }
+  .income__list .item {
+    margin-left: 1.4rem;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 88%;
+  }
+
+  #income-1 {
+    margin-left: 1.4rem;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 88%;
+  }
+
+  #expenses-0 {
+    margin-left: 1.4rem;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 88%;
+  }
+
+  .expenses__list .item {
+    margin-left: 1.4rem;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 88%;
+  }
+  #expenses-1 {
+    margin-left: 1.4rem;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 88%;
+  }
+}
