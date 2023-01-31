@@ -1,4 +1,4 @@
-# Bookish stat
+# Bookish Stat
 A Book and Movie lending API.
 
 ## Field
