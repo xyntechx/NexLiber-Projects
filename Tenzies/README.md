@@ -1,6 +1,6 @@
 # Tenzies
 
-A game where you roll 10 dice until all dice are the same created using React and Typescript
+A React game where you roll 10 dice until all the dice are the same.
 
 ## Field
 
