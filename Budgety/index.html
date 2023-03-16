@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="budget.css">
+    <script src="https://kit.fontawesome.com/dd79c683b2.js" crossorigin="anonymous"></script>
+
+    <title>Budgety</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="budget">
+            <div class="budget__title">
+                Available Budget in <span class="budget__title--month">%Month%</span>:
+            </div>
+            <div style="color: #260557;font-weight: 900;" class="budget__value">+ 2,345.64</div>
+            <div class="budget__income clearfix">
+                <div style="color: rgb(204, 196, 196);font-weight: 500;" class="budget__income--text">INCOME</div>
+                <div class="right">
+                    <div style="color: whitesmoke;font-weight: 500;" class="budget__income---value">+ 4,300.00</div>
+                    <div class="budget__income--percentage">&nbsp;</div>
+                </div>
+            </div>
+            <div class="budget__expenses clearfix">
+                <div style="color:  rgb(204, 196, 196);font-weight: 500;" class="budget__expenses--text">EXPENSES</div>
+                <div class="right">
+                    <div style="color: whitesmoke;font-weight: 500;" class="budget__expenses--value">- 1,954.36</div>
+                    <div style="color: whitesmoke;font-weight: 500;" class="budget__expenses--percentage">45%</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add_container">
+                <select class="add__type">
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                </select>
+
+                <input type="text" class="add__description" placeholder="Add description">
+                <input type="number" class="add__value" placeholder="Value">
+                <button class="add_btn"><i class="fa-regular fa-circle-check fa-2x"></i></button>
+
+
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="income">
+                <h2 class="income__title">INCOME</h2>
+                <div class="income__list">
+
+
+                    <!--
+                    <div class="item clearfix" id="income-0">
+                        <div class="item__description">Salary</div>
+                        <div class="right clearfix">
+                            <div class="item__value">+ 2,100.00</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-thin fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item clearfix" id="income-1">
+                        <div class="item__description">Sold Car</div>
+                        <div class="right clearfix">
+                            <div class="item__value">+ 1,500.00</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-thin fa-circle-xmark "></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                -->
+                </div>
+            </div>
+
+
+
+
+            <div class="expenses">
+                <h2 class="expenses__title">EXPENSES</h2>
+                <div class="expenses__list">
+
+                    <!--
+                    <div class="item clearfix" id="expenses-0">
+                        <div class="item__description">Apartment Rent</div>
+                        <div class="right clearfix">
+                            <div class="item__value">- 900.00</div>
+                            <div class="item__percentage">21%</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-thin fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item clearfix" id="expenses-1">
+                        <div class="item__description">Grocery Shopping</div>
+                        <div class="right clearfix">
+                            <div class="item__value">- 435.28</div>
+                            <div class="item__percentage">10%</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-thin fa-circle-xmark"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                             -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
